@@ -1,10 +1,22 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "./Button";
 
 export const Contador = () => {
     const [contador, setContador] = useState(0);
     const [coisa, setCoisa] = useState("");
+
+    useEffect(() => {
+        console.log("Contador atualizado!");
+    }, [contador]);
+
+    useEffect(() => {
+        console.log("Coisa atualizado!");
+    }, [coisa]);
+
+    useEffect(() => {
+        console.log("Contador ou Coisa atualizado!");
+    }, [contador, coisa]);
 
     return <div className="flex flex-col gap-y-2">
         <h2 className="text-xl">Contador</h2>
