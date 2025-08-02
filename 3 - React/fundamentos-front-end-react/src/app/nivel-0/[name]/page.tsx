@@ -20,7 +20,7 @@ type PageProps = {
 const Page = async ({ params }: PageProps) => {
   const { name } = await params;
   return (
-    <div className="p-4 grid gap-y-4"> 
+    <div className="grid gap-y-4"> 
       <MeuNome name={name} age={33} birtDate={new Date(1992, 1, 11)}/>
       <Hobbies />
       <div>

@@ -1,3 +1,4 @@
+"use client";
 import { FC } from "react";
 
 type MeuNomeProps = {
@@ -6,6 +7,8 @@ type MeuNomeProps = {
   birtDate: Date;
 }
 
-export const MeuNome: FC<MeuNomeProps> = ({name, age, birtDate}) => (  
+export const MeuNome: FC<MeuNomeProps> = ({name, age, birtDate}) => {
+  return  (  
     <p>Meu nome é {name} e tenho {age} anos porque nasci no dia {" "} {birtDate.toLocaleDateString("pt-BR")}</p>
-);
+  );
+}
