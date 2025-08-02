@@ -24,16 +24,16 @@ export default function  ContadorProvider ({
 
     const [contador, setContador] = useState<ContadorType>(null);
     useEffect(() => {
-        const contadorSessionStore = sessionStorage.getItem("contador") ?? 0;
+        const contadorLocalStore = localStorage.getItem("contador") ?? 0;
         
-        if(contadorSessionStore !== null && contadorSessionStore !== undefined) {
-            setContador(Number(contadorSessionStore));
+        if(contadorLocalStore !== null && contadorLocalStore !== undefined) {
+            setContador(Number(contadorLocalStore));
         }
     }, []);
 
     useEffect(() => {
         if(contador){
-            sessionStorage.setItem("contador", contador.toString());
+            localStorage.setItem("contador", contador.toString());
         }       
     }, [contador]);
 
