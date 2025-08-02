@@ -1,24 +1,14 @@
-import Image from "next/image";
-
-
-
-//export default function Page() {
-//  return <div>Page</div>
-//}
-
-import { MeuNome } from "@/components/MeuNome";
-import { Hobbies } from "@/components/Hobbies";
-import { Imagem } from "@/components/Imagem";
-
+import Link from "next/link";
 
 const Page = () => (
-  
-        <div> 
-          <MeuNome name={"Fábio Higor"} age={33} birtDate={new Date(1992, 1, 11)}/>
-          <Hobbies />
-          <Imagem />
-        </div>
-
+    <div>
+      <Link className="underline" href="/nivel-0/joao">Ir para a página do João</Link><br />
+      <Link className="underline" href="/nivel-0/maria">Ir para a página da Maria</Link><br />
+      <Link className="underline" href="/nivel-0/fulano">Ir para a página do Fulano</Link><br />
+      <Link className="underline" href="/nivel-0/ciclano">Ir para a página do Ciclano</Link><br />
+      <Link className="underline" href="/nivel-0/abel">Ir para a página do Abel</Link><br />
+      
+    </div>
 );
 
 export default Page;
