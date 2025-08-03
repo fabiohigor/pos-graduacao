@@ -32,7 +32,7 @@ export default function  ContadorProvider ({
     }, []);
 
     useEffect(() => {
-        if(contador){
+        if(contador !== null && contador !== undefined) {
             localStorage.setItem("contador", contador.toString());
         }       
     }, [contador]);

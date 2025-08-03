@@ -1,7 +1,8 @@
 "use client";
+import { useContext } from "react";
 
 import { ContadorContext} from "@/context/ContadorContext";
-import { useContext } from "react";
+
 import { Button } from "./Button";
 
 
@@ -16,28 +17,28 @@ export const ContadorGlobal = () => {
             <div className="flex gap-x-2">
                 <Button
                     onClick={() => {
-                        setContador((c) => c - 3);                
+                        setContador((c) => (c ?? 0) - 3);
                     }}
                 >
                     -3
                 </Button>
                 <Button
                     onClick={() => {
-                        setContador(contador - 1);
+                       setContador((c) => (c ?? 0) - 1);
                     }}
                 >
                     -1
                 </Button>
                 <Button
                     onClick={() => {
-                        setContador(contador + 1);
+                       setContador((c) => (c ?? 0) + 1);
                     }}
                 >
                     +1
                 </Button>
                 <Button
                     onClick={() => {
-                        setContador((c) => c + 3);
+                        setContador((c) => (c ?? 0) + 3);
                     }}
                 >
                     +3
