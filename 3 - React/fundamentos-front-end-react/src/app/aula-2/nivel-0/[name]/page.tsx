@@ -27,7 +27,7 @@ const Page = async ({ params }: PageProps) => {
         <p>Gosto de:</p>
         <Imagem />
       </div>
-      <Link className="underline" href="/nivel-0">Voltar para a página inicial</Link>
+      <Link className="underline" href="/aula-2/nivel-0">Voltar para a página inicial</Link>
     </div>
   );
 };
