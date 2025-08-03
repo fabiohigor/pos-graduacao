@@ -6,9 +6,9 @@ import Image from "next/image";
 //  return <div>Page</div>
 //}
 
-import { MeuNome } from "@/components/MeuNome";
-import { Hobbies } from "@/components/Hobbies";
-import { Imagem } from "@/components/Imagem";
+import { MeuNome } from "@/components/aula-2/MeuNome";
+import { Hobbies } from "@/components/aula-2/Hobbies";
+import { Imagem } from "@/components/aula-2/Imagem";
 import Link from "next/link";
 
 type PageProps = {

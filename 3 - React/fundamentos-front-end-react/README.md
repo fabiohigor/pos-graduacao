@@ -1,3 +1,5 @@
+Link do repositorio do professor Daniel Xavier: https://github.com/DanielJXavier/fundamentos-front-end-react
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

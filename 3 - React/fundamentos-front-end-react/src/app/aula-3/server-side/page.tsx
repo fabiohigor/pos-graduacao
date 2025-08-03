@@ -1,8 +1,10 @@
+import { PostType } from "@/app/types"
+
 export default async function Page() {
 
   const response = await fetch('https://api.vercel.app/blog')
 
-  const posts = await response.json()
+  const posts: PostType[] = await response.json()
   
   return (
     <ul>
